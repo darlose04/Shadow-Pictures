@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import Picture from "./Picture";
 
-export default class Pictures extends Component {
+class Pictures extends Component {
   render() {
     return (
       <div>
-        
+        <h2>This will be the page that lists all the picture posts</h2>
       </div>
     )
   }
 }
+
+export default Pictures;
