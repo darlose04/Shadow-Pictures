@@ -29,5 +29,5 @@ Header.propTypes = {
 Header.defaultProps = {
   branding: 'Shadow Pics'
 }
-
+// add comment to test git change
 export default Header;
