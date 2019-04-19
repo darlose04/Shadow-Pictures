@@ -10,7 +10,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <Header branding="ShadowGram" />
-          <h1>This is going to be a site for pictures of Shadow, my dog.</h1>
+          
         </div>
       </Router>
     );
