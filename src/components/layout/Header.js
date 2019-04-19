@@ -11,7 +11,7 @@ const Header = (props) => {
         <a href="#" className="navbar-brand">{branding}</a>
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link to="#" className="nav-link">Home</Link>
+            <Link to="/posts/add" className="nav-link">Add Picture</Link>
           </li>
           <li className="nav-item">
             <Link to="#" className="nav-link">About</Link>
@@ -29,5 +29,5 @@ Header.propTypes = {
 Header.defaultProps = {
   branding: 'Shadow Pics'
 }
-// add comment to test git change
+
 export default Header;
