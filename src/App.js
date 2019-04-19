@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Header branding="Image Gallery" />
+          <Header branding="ShadowGram" />
           <h1>This is going to be a site for pictures of Shadow, my dog.</h1>
         </div>
       </Router>
