@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from "./components/layout/Header";
 import Pictures from "./components/posts/Pictures";
 import AddPicture from "./components/posts/AddPicture";
+import About from "./components/pages/About";
 import uuid from 'uuid';
 
 // import dogs from './pics/shadowviolet.jpeg';
@@ -42,6 +43,7 @@ class App extends Component {
                 </React.Fragment>
               )} />
               <Route exact path="/posts/add" component={AddPicture} />
+              <Route exact path="/about" component={About} />
             </Switch>
           </div>
         </div>
