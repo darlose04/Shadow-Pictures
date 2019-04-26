@@ -17,7 +17,7 @@ const Header = (props) => {
             <Link to="/posts/add" className="nav-link">Add Picture</Link>
           </li>
           <li className="nav-item">
-            <Link to="#" className="nav-link">About</Link>
+            <Link to="/about" className="nav-link">About</Link>
           </li>
         </ul>
       </div>
