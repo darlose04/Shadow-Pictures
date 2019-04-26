@@ -7,7 +7,7 @@ class Picture extends Component {
     return (
       <div className="container">
         <div className="card mb-3">
-        <img src={image} alt="" className="card-img-top"/>
+        <img src={image} alt="dog pics" className="card-img-top"/>
           <div className="card-body">
             <h4 className="card-title">{title}</h4>
             <p className="card-text">{desc}</p>
