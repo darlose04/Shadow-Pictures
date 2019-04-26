@@ -5,6 +5,8 @@ import Pictures from "./components/posts/Pictures";
 import AddPicture from "./components/posts/AddPicture";
 import uuid from 'uuid';
 
+import sleep from './pics/shadowsleep.jpg';
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class App extends Component {
@@ -19,7 +21,7 @@ class App extends Component {
       {
         id: uuid.v4(),
         title: 'Chillin',
-        desc: 'Shadow hanging out in the driveway',
+        desc: 'Shadow hanging out in the driveway.',
         image: './pics/shadowdriveway.jpg'
       }
     ]
