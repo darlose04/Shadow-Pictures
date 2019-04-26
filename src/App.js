@@ -32,7 +32,7 @@ class App extends Component {
           <Header branding="ShadowGram" />
           <div className="container">
             <Switch>
-              <Route exact path="/posts" component={Pictures} render={props => (
+              <Route exact path="/posts" render={props => (
                 <React.Fragment>
                   <Pictures pictures={this.state.pictures} />
                 </React.Fragment>
