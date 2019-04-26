@@ -5,8 +5,8 @@ import Pictures from "./components/posts/Pictures";
 import AddPicture from "./components/posts/AddPicture";
 import uuid from 'uuid';
 
-// phone images are too big
-// import sleep from './pics/shadowsleep.jpg'
+import dogs from './pics/shadowviolet.jpeg';
+import puppy from './pics/puppy.jpeg';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -15,15 +15,15 @@ class App extends Component {
     pictures: [
       {
         id: uuid.v4(),
-        title: 'Snoozing',
-        desc: 'Shadow sleeping on his back when he was just a pup.',
-        image: ''
+        title: 'Patient',
+        desc: 'Shadow waiting to go for a walk.',
+        image: {puppy}
       },
       {
         id: uuid.v4(),
         title: 'Chillin',
-        desc: 'Shadow hanging out in the driveway.',
-        image: ''
+        desc: 'Shadow hanging out with his buddy Violet.',
+        image: {dogs}
       }
     ]
   }
