@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 class Pictures extends Component {
   render() {
-    return this.props.pictures.map((picture) => {
+    return this.props.pictures.map((picture) => (
       <Picture key={picture.id} picture={picture} />
-    });
+    ));
   }
 }
 
