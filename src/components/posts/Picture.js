@@ -4,12 +4,8 @@ import { Consumer } from '../../context';
 
 class Picture extends Component {
 
-  onDeleteClick = async (id, dispatch) => {
-    try {
-      await dispatch({type: 'DELETE_PICTURE', payload: id});
-    } catch(e) {
-      dispatch({type: 'DELETE_PICTURE', payload: id});
-    }
+  onDeleteClick = (id, dispatch) => {
+    dispatch({type: 'DELETE_PICTURE', payload: id});
   }
 
   render() {
@@ -33,7 +29,6 @@ class Picture extends Component {
             </div>
           )
         }}
-        
       </Consumer>
     )
   }
