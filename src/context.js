@@ -10,6 +10,11 @@ const reducer = (state, action) => {
         ...state,
         pictures: state.pictures.filter(picture => picture.id !== action.payload)
       }
+    case 'ADD_PICTURE':
+      return {
+        ...state,
+        pictures: [action.payload, ...state.pictures]
+      }
     default:
       return state;
   }
