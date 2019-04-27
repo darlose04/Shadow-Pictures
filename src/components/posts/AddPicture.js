@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class AddPicture extends Component {
-  
+  state = {
+    desc: '',
+    image: ''
+  }
 
   render() {
     return (
