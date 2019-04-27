@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 class AddPicture extends Component {
   state = {
@@ -11,6 +11,12 @@ class AddPicture extends Component {
     e.preventDefault();
 
     console.log(this.state);
+
+    // clear state
+    this.setState({
+      desc: '',
+      image: ''
+    });
   }
 
   onChange = (e) => this.setState({ [e.target.name]: e.target.value });
