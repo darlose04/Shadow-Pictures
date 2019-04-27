@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class AddPicture extends Component {
-  state = {
-    title: '',
-    desc: '',
-    image: ''
-  }
+  
 
   render() {
     return (
@@ -14,8 +11,24 @@ class AddPicture extends Component {
           Add Picture
         </div>
         <div className="card-body">
-          <form >
-            
+          <form>
+            <div className="form-group">
+              <label htmlFor="desc">Description</label>
+              <input 
+                type="text" 
+                name="desc"
+                className="form-control"
+                placeholder="Enter description..."
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="image">Add image</label>
+              <input 
+                type="file"
+                className="form-control-file"
+              />
+            </div>
+            <input type="submit" value="Add Picture" className="btn btn-block btn-primary"/>
           </form>
         </div>
       </div>
