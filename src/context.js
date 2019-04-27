@@ -30,7 +30,8 @@ export class Provider extends Component {
         desc: 'Shadow hanging out with his buddy Violet.',
         image: require('./pics/shadowviolet.jpeg')
       }
-    ]
+    ],
+    dispatch: action => this.setState(state => reducer(state, action))
   }
 
   render() {
