@@ -3,6 +3,18 @@ import uuid from 'uuid';
 
 const Context = React.createContext();
 
+const reducer = (state, action) => {
+  switch(action.type) {
+    case 'DELETE_PICTURE':
+      return {
+        ...state,
+        pictures: state.pictures.filter(picture => picture.id !== action.payload)
+      }
+    default:
+      return state;
+  }
+}
+
 export class Provider extends Component {
   state = {
     pictures: [
